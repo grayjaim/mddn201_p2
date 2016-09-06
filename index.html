@@ -1,67 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<div id="wrapper">
 <head>
-    <meta charset="utf-8">
-    <title>Responsive fancy style sidebar menu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="myScript.js"></script>
 </head>
 <body>
-  <div id="wrapper">
-
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <nav id="spy">
-                <ul class="sidebar-nav nav">
-                    <li class="sidebar-brand">
-                        <a href="#home"><span class="fa fa-home solo">Home</span></a>
-                    </li>
-                    <li>
-                        <a href="#anch1" data-scroll>
-                            <span class="fa fa-anchor solo">Profile</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#anch2" data-scroll>
-                            <span class="fa fa-anchor solo">Player</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#anch3" data-scroll>
-                            <span class="fa fa-anchor solo">Watcher</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#anch4" data-scroll>
-                            <span class="fa fa-anchor solo">About</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Page content -->
-        <div id="page-content-wrapper">
-            <div class="content-header">
-                <h1 id="home">
-                    <a id="menu-toggle" href="#" class="glyphicon glyphicon-align-justify btn-menu toggle">
-                        <i class="fa fa-bars"></i>
-                    </a>
-            </div>
-
-            <div class="page-content inset" data-spy="scroll" data-target="#spy">
-                <div class="row">
-                        <!-- wwrite me from here -->
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/myScript.js"></script>
-
+<div class="icon">
+    <img src="MenuIcon.png"  width="50" height="50"/>
+</div>
+<div class="menu">
+<ul>
+  <li data-menuanchor="Profile" class="active"><a href ="#">Profile</li>
+  <li data-menuanchor="Player" class="active"><a href ="#">Player</li>
+  <li data-menuanchor="Watcher" class="active"><a href ="#">Watcher</li>
+  <li data-menuanchor="About" class="active"><a href ="#">About</li>
+</ul>
+</div>
+<div class="sidemenu">
+  <div class="iconmenu">
+    <i class="bars"></i>
+  </div>
 </body>
+</div>
 </html>
