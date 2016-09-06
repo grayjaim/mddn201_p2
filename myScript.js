@@ -1,22 +1,24 @@
+
 var main = function() {
-  $("iconmenu").click function(){
-    (".menu").animate({
+  $('.icon-menu').click function(){
+    $('.menu').animate({
       left:"0px"
     }, 200);
 
-  $("body").animate({
-    left:"340px"
+  $('body').animate({
+    left:"285px"
   }, 200);
 });
 
-$(".icon").click function(){}
-  (".menu").animate({
-    left:"-340px"s
+$('.icon-close').click (function(){
+  $('.menu').animate({
+    left:"-285px"
   }, 200);
 
-  $("body").animate({
+  $('body').animate({
   left:"0px"
 }, 200);
 });
 };
+
 $(document.ready(main);
