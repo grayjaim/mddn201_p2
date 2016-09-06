@@ -1,23 +1,24 @@
-var main = function() {
-  $('iconmenu').click function(){
-    ('.menu').animate({
-      left:"0px"
-    }, 200);
 
-  $('body').animate({
-    left:"340px"
-  }, 200);
+/*Menu-toggle*/
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("active");
 });
 
-$('.icon').click function(){}
-  ('.menu').animate({
-    left:"-340px"
-  }, 200);
+/*Scroll Spy*/
+$('body').scrollspy({ target: '#spy', offset:80});
 
-  $('body').animate({
-  left:"0px"
-  }, 200);
+/*Smooth link animation*/
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
 });
-
-
-}
